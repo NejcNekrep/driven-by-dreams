@@ -1,1 +1,54 @@
+import Head from 'next/head';
+import Image from 'next/image';
 
+export default function Home() {
+  return (
+    <div>
+      <Head>
+        <title>Driven by Dreams</title>
+        <meta name="description" content="Izposoja športnih avtomobilov - Šentilj" />
+      </Head>
+
+      <main>
+        <h1>Izposoja športnih avtomobilov / Sportwagenverleih</h1>
+        <p>Lokacija: Cesta 2. julija 21, 2212 Šentilj</p>
+        <section>
+          <h2>Ponudba / Angebote</h2>
+          <div>
+            <h3>Porsche 911 Carrera 4S</h3>
+            <Image src="/images/carrera.jpg" alt="Carrera 4S" width={400} height={250} />
+            <p>Dnevno: 290€ / Dan</p>
+            <p>Vikend: 790€</p>
+            <p>7 dni: 1900€</p>
+            <p>Mesec: 6900€</p>
+          </div>
+          <div>
+            <h3>Taycan Turbo S</h3>
+            <Image src="/images/taycan.jpg" alt="Taycan Turbo S" width={400} height={250} />
+            <p>Dnevno: 330€ / Dan</p>
+            <p>Vikend: 890€</p>
+            <p>7 dni: 2100€</p>
+            <p>Mesec: 7400€</p>
+          </div>
+          <div>
+            <h3>Audi R8 V10</h3>
+            <Image src="/images/r8.jpg" alt="Audi R8" width={400} height={250} />
+            <p>Dnevno: 310€ / Dan</p>
+            <p>Vikend: 850€</p>
+            <p>7 dni: 2000€</p>
+            <p>Mesec: 7100€</p>
+          </div>
+        </section>
+        <section>
+          <h2>Kontaktni obrazec / Kontaktformular</h2>
+          <form>
+            <input type="text" placeholder="Ime / Name" required /><br />
+            <input type="email" placeholder="Email" required /><br />
+            <textarea placeholder="Sporočilo / Nachricht" required></textarea><br />
+            <button type="submit">Pošlji / Senden</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  );
+}
